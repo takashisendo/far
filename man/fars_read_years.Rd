@@ -16,7 +16,7 @@ If years are not in valid range, "invalid year" will be returned.
 Reading files for a single or multiple years.
 }
 \examples{
-fars_read_years(2012)
+fars_read_years(2013)
 fars_read_years(2013:2015)
 
 }

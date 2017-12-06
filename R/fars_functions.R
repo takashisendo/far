@@ -26,7 +26,7 @@ fars_read <- function(filename) {
 #'
 #' This is to create a file name as "accident_%d.csv.bz2" combined with a specific year.
 #'
-#' @param years Specify years to read data
+#' @param year Specify years to read data
 #'
 #' @return Print created file name.
 #'
@@ -48,7 +48,7 @@ make_filename <- function(year) {
 #' @return If years are not in valid range, "invalid year" will be returned.
 #'
 #' @examples
-#' fars_read_years(2012)
+#' fars_read_years(2013)
 #' fars_read_years(2013:2015)
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
@@ -102,7 +102,14 @@ fars_summarize_years <- function(years) {
 #' @return map plot of the number of accident. If there is no accidents for the year in the stat, return
 #' "no accidents to plot".
 #'
-#' @examples fars_map_state(state.num, 2015)
+#' @examples
+#' library(mapdata)
+#' fars_map_state(12, 2014)
+#' fars_map_state(36, 2014)
+#'
+#' \dontrun{
+#' fars_map_state(3, 2014)   # error
+#' }
 #'
 #' @importFrom graphics points
 #'
