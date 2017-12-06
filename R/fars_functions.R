@@ -10,7 +10,7 @@
 #' @examples
 #' fars_read(filename)
 #'
-#' @importFrom read read_csv
+#' @importFrom readr read_csv
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
