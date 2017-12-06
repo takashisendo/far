@@ -34,12 +34,8 @@ The `html_vignette` template includes a basic CSS theme. To override this theme 
 
 ## Summarizing FARS Data
 
-The fars_summarize_years() function take the same argument as the fars_read_years(), and produces a summary of the simple counts of fatalities by month and year:
+The fars_summarize_years() function take the same argument as the fars_read_years(), and produces a summary of the simple counts of fatalities by month and year.
 
-```{r, echo=FALSE}
-fars_summary <- fars_summarize_years(2013:2015)
-fars_summary
-```
 
 ## Figures
 
