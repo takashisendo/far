@@ -10,6 +10,8 @@
 #' @examples
 #' fars_read(filename)
 #'
+#' @importFrom readr read_csv
+#'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
@@ -51,6 +53,8 @@ make_filename <- function(year) {
 #' fars_read_years(2012)
 #' fars_read_years(2013:2015)
 #'
+#' @importFrom dplyr mutate select
+#'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
@@ -80,6 +84,8 @@ fars_read_years <- function(years) {
 #' fars_summarize_years(2014)
 #' fars_summarize_years(2014:2015)
 #'
+#' @importFrom dply bind_rows group_by summarize
+#' @importFrom tidyr spread
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
@@ -104,6 +110,9 @@ fars_summarize_years <- function(years) {
 #' "no accidents to plot".
 #'
 #' @examples fars_map_state(state.num, 2015)
+#'
+#' @importFrom maps map
+#' @importFrom graphics points
 #'
 #' library(mapdata)
 #' fars_map_state(12, 2014)

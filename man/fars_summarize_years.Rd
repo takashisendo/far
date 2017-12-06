@@ -19,7 +19,6 @@ Summarizes files by years and month.
 fars_summarize_years(2014)
 fars_summarize_years(2014:2015)
 
-
 }
 \references{
 http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
