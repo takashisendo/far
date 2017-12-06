@@ -112,10 +112,14 @@ fars_summarize_years <- function(years) {
 #'
 #' @examples fars_map_state(state.num, 2015)
 #'
-#' @importFrom maps graphics
+#' library(mapdata)
+#' fars_map_state(12, 2014)
+#' fars_map_state(36, 2014)
 #'
-#' @importFrom maps map
-#' @importFrom graphics point
+#' \dontrun{
+#' fars_map_state(3, 2014)   # error
+#' }
+#'
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
