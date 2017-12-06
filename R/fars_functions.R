@@ -39,9 +39,9 @@ fars_read <- function(filename) {
 #' @export
 make_filename <- function(year) {
     year <- as.integer(year)
-    sprintf("accident_%d.csv.bz2", year)
+    file<-sprintf("accident_%d.csv.bz2", year)
+    system.file("extdata", file, package="far")
 }
-
 #' fars_read_years
 #'
 #' Reading files for a single or multiple years.
