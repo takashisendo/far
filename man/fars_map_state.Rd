@@ -19,7 +19,7 @@ map plot of the number of accident. If there is no accidents for the year in the
 Extract a data for a specific year and state.
 }
 \examples{
-fars_nap_state(state.num, 2015)
+fars_map_state(state.num, 2015)
 
 }
 \references{
