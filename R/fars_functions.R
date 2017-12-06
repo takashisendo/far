@@ -10,8 +10,6 @@
 #' @examples
 #' fars_read(filename)
 #'
-#' @importFrom readr read_csv
-#'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
@@ -53,8 +51,6 @@ make_filename <- function(year) {
 #' fars_read_years(2012)
 #' fars_read_years(2013:2015)
 #'
-#' @importFrom dplyr mutate select
-#'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
@@ -84,9 +80,6 @@ fars_read_years <- function(years) {
 #' fars_summarize_years(2014)
 #' fars_summarize_years(2014:2015)
 #'
-#' @importFrom dplyr group_by
-#' @importFrom dplyr summarize
-#' @importFrom tidyr spread
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
@@ -119,7 +112,6 @@ fars_summarize_years <- function(years) {
 #' \dontrun{
 #' fars_map_state(3, 2014)   # error
 #' }
-#'
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'

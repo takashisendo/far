@@ -29,7 +29,6 @@ fars_map_state(36, 2014)
 fars_map_state(3, 2014)   # error
 }
 
-
 }
 \references{
 http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
