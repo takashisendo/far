@@ -1,9 +1,9 @@
 Package: far
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Read accidents data and make a basic sumary
 Version: 0.1.0
 Author: Takashi Sendo <takashi.sendo@gmail.com>
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: The package maintainer <takashi.sendo@gmail.com>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: MIT
@@ -12,5 +12,9 @@ LazyData: true
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown,
-    testthat
+    testthat,
+    dplyr,
+    maps,
+    readr,
+    tidyr
 VignetteBuilder: knitr

@@ -2,15 +2,13 @@
 #'
 #' This is a simple function to read a file.
 #'
-#' @param file A character string giving the text the function will print
+#' @param filename A character string of the name of file.
 
 #' @return Data object from the file specified by filename.
 #' If file does not exist, return a message "file does not exists".
 #'
 #' @examples
 #' fars_read(filename)
-#'
-#' @importFrom readr read_csv
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
@@ -53,8 +51,6 @@ make_filename <- function(year) {
 #' fars_read_years(2012)
 #' fars_read_years(2013:2015)
 #'
-#' @importFrom dplyr mutate select
-#'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
@@ -84,9 +80,6 @@ fars_read_years <- function(years) {
 #' fars_summarize_years(2014)
 #' fars_summarize_years(2014:2015)
 #'
-#' @importFrom dply bind_rows group_by summarize
-#' @importFrom tidyr spread
-#'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
@@ -111,16 +104,7 @@ fars_summarize_years <- function(years) {
 #'
 #' @examples fars_map_state(state.num, 2015)
 #'
-#' @importFrom maps map
 #' @importFrom graphics points
-#'
-#' library(mapdata)
-#' fars_map_state(12, 2014)
-#' fars_map_state(36, 2014)
-#'
-#' \dontrun{
-#' fars_map_state(3, 2014)   # error
-#' }
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'

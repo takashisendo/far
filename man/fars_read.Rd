@@ -7,7 +7,7 @@
 fars_read(filename)
 }
 \arguments{
-\item{file}{A character string giving the text the function will print}
+\item{filename}{A character string of the name of file.}
 }
 \value{
 Data object from the file specified by filename.
