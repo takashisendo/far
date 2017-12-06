@@ -51,7 +51,7 @@ make_filename <- function(year) {
 #'
 #' @examples
 #' fars_read_years(2012)
-#' fars_read_years(2012:2015)
+#' fars_read_years(2013:2015)
 #'
 #' @importFrom dplyr mutate select
 #'

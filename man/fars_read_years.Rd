@@ -17,7 +17,7 @@ Reading files for a single or multiple years.
 }
 \examples{
 fars_read_years(2012)
-fars_read_years(2012:2015)
+fars_read_years(2013:2015)
 
 }
 \references{
