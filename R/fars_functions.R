@@ -109,11 +109,8 @@ fars_summarize_years <- function(years) {
 #' }
 #'
 #' @importFrom graphics points
-#'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
-#'
 #' @export
-#'
 fars_map_state <- function(state.num, year) {
     filename <- make_filename(year)
     data <- fars_read(filename)
