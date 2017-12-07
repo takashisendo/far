@@ -49,7 +49,7 @@ The danger with adding data in this way is that if you reinstall the package it 
 
 ### Single Year
 
-If you wish to just look at fatality data for a a single year, use the `fars_read_years()` function with a single year as input. The only data columns selected are `MONTH` and `year`.  This returns a list of length one, and the first element in the list is the `tbl_df` (the `tidyverse` data frame) listing the month and year for each fatal accident.  By itself, this data is relatively meaningless unless you want to count number of fatalities by month.
+If you wish to just look at fatality data for a a single year, use the `fars_read_years()` function with a single year as input. The only data columns selected are `MONTH` and `year`.  This returns a list of length one, and the first element in the list is the `tbl_df` (the `tidyverse` data frame) listing the month and year for each fatal accident.  By itself, this data is relatively meaningless unless you want to count number of fatalities summarized by month.
 
 ```{r single_year}
 fars_2014 <- fars_read_years(years = 2014)
@@ -86,3 +86,4 @@ library(mapdata)
 fars_map_state(21, 2014)
 fars_map_state(37, 2014)
 ```
+
