@@ -19,4 +19,4 @@ To get started, read the introduction vignette: `vignette('introduction', packag
 
 ### Travis Badge
 
-[![Build Status](https://travis-ci.org/takashisendo/farsdata.svg?branch=master)](https://travis-ci.org/takashisendo/farsdata)
+[![Build Status](https://travis-ci.org/takashisendo/far.svg?branch=master)](https://travis-ci.org/takashisendo/far)
