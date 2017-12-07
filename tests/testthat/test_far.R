@@ -1,5 +1,4 @@
-library(far)
-context('Testing Errors for far')
+context('Errors')
 
 test_that('Throws errors', {
     throws_error(fars_read_years(years = 2000))

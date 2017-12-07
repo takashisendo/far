@@ -2,36 +2,35 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_map_state}
 \alias{fars_map_state}
-\title{fars_summarize_years}
+\title{Map State Motor Vehicle Fatalities.}
 \usage{
 fars_map_state(state.num, year)
 }
 \arguments{
-\item{state.num}{index of a state}
+\item{state.num}{Numerical code for US state.}
 
-\item{year}{year to specify}
-
-\item{years}{years to summarize.}
-}
-\value{
-Summary firls for specified years aggregated by months.
-
-map plot of the number of accident. If there is no accidents for the year in the stat, return
-"no accidents to plot".
+\item{year}{An integer, or a string or numeric that can be coerced to a string,
+of the year of interest.}
 }
 \description{
-Summarizes files by years and month.
+\code{fars_map_state} maps state motor vehicle fatalities given a year and
+  state id number.
+}
+\details{
+This function takes a state number and a year, and draws
+  a state outline with dots to represent the location of motor vehicle
+  fatalities for that year.  This function will throw an error if an invalid
+  state number is chosen or the chosen year's data does not exist.
+
+You must have library(mapdata) loaded in your namespace for this to work.
 }
 \examples{
-library(magrittr)
+library(mapdata)
+fars_map_state(12, 2014)
+fars_map_state(36, 2014)
 
 \dontrun{
 fars_map_state(3, 2014)   # error
 }
 
-}
-\references{
-http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
-
-http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 }

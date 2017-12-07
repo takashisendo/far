@@ -2,25 +2,33 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_read}
 \alias{fars_read}
-\title{fars_read}
+\title{Read FARS Data.}
 \usage{
 fars_read(filename)
 }
 \arguments{
-\item{filename}{A character string of the name of file.}
+\item{filename}{A character string giving the filename of the FARS data.}
 }
 \value{
-Data object from the file specified by filename.
-If file does not exist, return a message "file does not exists".
+This function returns a tibble containing the FARS data. If an
+  incorrect filename is entered the function will stop.
 }
 \description{
-This is a simple function to read a file.
+\code{fars_read} reads FARS data into the environment.
+}
+\details{
+This function reads data from the  US National Highway Traffic Safety
+  Administration's Fatality Analysis Reporting System (FARS), given a
+  filename for the data. It returns a tibble of the data. For this function
+  to work properly, a filename pointing to an existing file must be given.
 }
 \examples{
 full_filename <- system.file('extdata', 'accident_2013.csv.bz2',
-                             package = 'far')
-fars_read(full_filename)
+                             package = 'farsdata')
+fars_read(filename = full_filename)
+
+\dontrun{
+fars_read(filename = 'filedoesnotexist')
 }
-\references{
-http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
+
 }

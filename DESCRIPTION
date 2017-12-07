@@ -1,10 +1,11 @@
 Package: far
 Type: Package
-Title: Read accidents data and make a basic sumary
+Title: FARS Data Tools
 Version: 0.1.0
-Author: Takashi Sendo <takashi.sendo@gmail.com>
-Maintainer: The package maintainer <takashi.sendo@gmail.com>
-Description: This is to manupulate far data, accident record in the US.
+Authors@R: person('Sendo', 'Takashi', email = 'takashi.sendo@gmail.com', role = c('aut', 'cre'))
+Description: This R package is submitted as the Week 4 final assignment for the 
+    "Building R Packages" course on Coursera, as part of the Johns Hopkins 
+    University "Mastering Software Development in R" specialization.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

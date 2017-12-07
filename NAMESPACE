@@ -3,5 +3,6 @@
 export(fars_map_state)
 export(fars_read)
 export(fars_read_years)
+export(fars_summarize_years)
 export(make_filename)
-importFrom(graphics,points)
+importFrom(magrittr,"%>%")
