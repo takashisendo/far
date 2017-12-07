@@ -1,5 +1,5 @@
 ---
-title: "Introduction to farsdata Package"
+title: "Introduction to far Package"
 author: "Takashi Sendo"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -10,7 +10,7 @@ vignette: >
 ---
 
 ```{r setenv, echo=FALSE, message=FALSE}
-library(farsdata)
+library(far)
 ```
 
 This is a very simple package to explore 2013-2015 data from the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS).  This package was written for the Week 4 final assignment for the "Building R Packages" course on Coursera, as part of the Johns Hopkins University "Mastering Software Development in R" specialization.
