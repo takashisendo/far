@@ -3,7 +3,7 @@ library(far)
 
 ## ----sample2013_data-----------------------------------------------------
 fars_2013_fn <- make_filename(2013)
-fars_2013 <- fars_read(fars_2013_fn) 
+fars_2013 <- fars_read(fars_2013_fn)
 dim(fars_2013)
 fars_2013
 

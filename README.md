@@ -15,7 +15,7 @@ library(far)
 
 ### Vignette
 
-To get started, read the introduction vignette: `vignette('introduction', package = 'farsdata')`.
+To get started, read the introduction vignette: `vignette('far', package = 'far')`.
 
 ### Travis Badge
 

@@ -86,4 +86,3 @@ library(mapdata)
 fars_map_state(21, 2014)
 fars_map_state(37, 2014)
 ```
-
