@@ -2,7 +2,7 @@
 
 This R package is submitted as the Week 4 final assignment for the "Building R Packages" course on Coursera, as part of the Johns Hopkins University "Mastering Software Development in R" specialization.
 
-Date: Dec 7, 2017 
+Date: Dec 8, 2017 
 
 ### Installation
 
@@ -19,4 +19,4 @@ To get started, read the introduction vignette: `vignette('introduction', packag
 
 ### Travis Badge
 
-[![Build Status](https://travis-ci.org/takashisendo/far.svg?branch=master)](https://travis-ci.org/takashisendo/far)
+[![Build Status](https://travis-ci.org/takashisendo/farsdata.svg?branch=master)](https://travis-ci.org/takashisendo/farsdata)
