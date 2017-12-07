@@ -76,20 +76,21 @@ fars_read_years <- function(years) {
 #' @return Summary firls for specified years aggregated by months.
 #'
 #' @examples
-#' fars_summarize_years(years = c(2013, 2014, 2015))
-#' fars_summarize_years(years = 2013)
-#'
+#' library(magrittr)
+## fars_summarize_years(years = c(2013, 2014, 2015))
+## fars_summarize_years(years = 2013)
+##
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
 
-fars_summarize_years <- function(years) {
-    dat_list <- fars_read_years(years)
-    dplyr::bind_rows(dat_list) %>%
-        dplyr::group_by(year, MONTH) %>%
-        dplyr::summarize(n = n()) %>%
-        tidyr::spread(year, n)
-}
+#fars_summarize_years <- function(years) {
+ #   dat_list <- fars_read_years(years)
+  #  dplyr::bind_rows(dat_list) %>%
+   #     dplyr::group_by("YEAR", "MONTH") %>%
+    #    dplyr::summarize(n = ~n()) %>%
+     #   tidyr::spread("year", "n")
+#}
 
 #' fars_map_state
 #'

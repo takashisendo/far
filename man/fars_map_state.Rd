@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_map_state}
 \alias{fars_map_state}
-\title{fars_map_state}
+\title{fars_summarize_years}
 \usage{
 fars_map_state(state.num, year)
 }
@@ -10,15 +10,20 @@ fars_map_state(state.num, year)
 \item{state.num}{index of a state}
 
 \item{year}{year to specify}
+
+\item{years}{years to summarize.}
 }
 \value{
+Summary firls for specified years aggregated by months.
+
 map plot of the number of accident. If there is no accidents for the year in the stat, return
 "no accidents to plot".
 }
 \description{
-Extract a data for a specific year and state.
+Summarizes files by years and month.
 }
 \examples{
+library(magrittr)
 
 \dontrun{
 fars_map_state(3, 2014)   # error
@@ -26,5 +31,7 @@ fars_map_state(3, 2014)   # error
 
 }
 \references{
+http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
+
 http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 }
