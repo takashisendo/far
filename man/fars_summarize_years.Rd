@@ -16,8 +16,8 @@ Summary firls for specified years aggregated by months.
 Summarizes files by years and month.
 }
 \examples{
-fars_summarize_years(2014)
-fars_summarize_years(2014:2015)
+fars_summarize_years(years = c(2013, 2014, 2015))
+fars_summarize_years(years = 2013)
 
 }
 \references{

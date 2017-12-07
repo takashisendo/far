@@ -19,9 +19,6 @@ map plot of the number of accident. If there is no accidents for the year in the
 Extract a data for a specific year and state.
 }
 \examples{
-library(mapdata)
-fars_map_state(12, 2014)
-fars_map_state(36, 2014)
 
 \dontrun{
 fars_map_state(3, 2014)   # error

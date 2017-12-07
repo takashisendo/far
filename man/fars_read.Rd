@@ -17,8 +17,9 @@ If file does not exist, return a message "file does not exists".
 This is a simple function to read a file.
 }
 \examples{
-fars_read(filename)
-
+full_filename <- system.file('extdata', 'accident_2013.csv.bz2',
+                             package = 'far')
+fars_read(full_filename)
 }
 \references{
 http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)

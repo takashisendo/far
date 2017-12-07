@@ -3,21 +3,20 @@
 #' This is a simple function to read a file.
 #'
 #' @param filename A character string of the name of file.
-
 #' @return Data object from the file specified by filename.
 #' If file does not exist, return a message "file does not exists".
-#'
 #' @examples
-#' fars_read(filename)
-#'
+#' full_filename <- system.file('extdata', 'accident_2013.csv.bz2',
+#'                              package = 'far')
+#' fars_read(full_filename)
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
 #' @export
 fars_read <- function(filename) {
-    # if(!file.exists(filename))
-    #    stop("file '", filename, "' does not exist")
+    if(!file.exists(filename))
+        stop("file '", filename, "' does not exist")
     data <- suppressMessages({
-        readr::read_csv(file.path("./inst/extdata",filename), progress = FALSE)
+        readr::read_csv(filename, progress = FALSE)
     })
     dplyr::tbl_df(data)
 }
@@ -77,8 +76,8 @@ fars_read_years <- function(years) {
 #' @return Summary firls for specified years aggregated by months.
 #'
 #' @examples
-#' fars_summarize_years(2014)
-#' fars_summarize_years(2014:2015)
+#' fars_summarize_years(years = c(2013, 2014, 2015))
+#' fars_summarize_years(years = 2013)
 #'
 #' @references http://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)
 #'
@@ -103,9 +102,7 @@ fars_summarize_years <- function(years) {
 #' "no accidents to plot".
 #'
 #' @examples
-#' library(mapdata)
-#' fars_map_state(12, 2014)
-#' fars_map_state(36, 2014)
+# fars_map_state(36, 2014)
 #'
 #' \dontrun{
 #' fars_map_state(3, 2014)   # error

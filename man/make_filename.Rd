@@ -7,7 +7,7 @@
 make_filename(year)
 }
 \arguments{
-\item{years}{Specify years to read data}
+\item{year}{Specify years to read data}
 }
 \value{
 Print created file name.
