@@ -9,8 +9,8 @@ Date: Dec 8, 2017
 To install this package to run on your system, please first install and load the `devtools` package. Then you may install and load this package thus:
 
 ```R
-install_github('takashisendo/farsdata')
-library(farsdata)
+install_github('takashisendo/far')
+library(far)
 ```
 
 ### Vignette
