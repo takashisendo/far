@@ -19,4 +19,3 @@ To get started, read the introduction vignette: `vignette('far', package = 'far'
 
 ### Travis Badge
 
-[![Build Status](https://travis-ci.org/takashisendo/farsdata.svg?branch=master)](https://travis-ci.org/takashisendo/farsdata)
